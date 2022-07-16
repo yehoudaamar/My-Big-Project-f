@@ -1,0 +1,76 @@
+body{
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+/* height: 100vh; */
+
+}
+.cont_poto{
+  /* background-color: rgb(218, 215, 219); */
+  border: 1px solid rgb(28, 4, 36);
+ width:  40%;
+ margin: auto;
+ margin-top: 10%;
+ /* padding: auto; */
+display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+.My_potoh1 ,.My_potoh2 ,.My_potoh3,.My_potoh4,.My_potoh5 ,.My_potoh6 { 
+
+  margin: 50px;
+  /* padding: 10px; */
+  /* background-color: rgb(252, 253, 253); */
+  width: 3.5cm;
+  height: 4.5cm;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid rgb(9, 59, 211);
+  
+
+}
+#image_input{
+  
+background-color: aquamarine;
+  direction: none;
+  color: black;
+  font-size: 80%;
+  background-size: cover;
+  background-position: center;
+  margin-top: 2%;
+  margin-left: 35%;
+ text-decoration: wavy;
+  text-align: center;
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  border: 5px solid rgb(247, 8, 8);
+  cursor: pointer;
+
+  
+}
+#image_input:hover{
+  box-shadow: 0 0 20px rgb(51, 55, 28);
+  font-size: 150%;
+  background-color: rgb(183, 23, 236);
+  color: white;
+}
+#pohto_sub{
+  background-color: rgb(28, 4, 36);
+  color: white;
+  font-size: 180%;
+  /* padding: 10px; */
+  border-radius: 10px;
+  margin-top: 2%;
+ text-align: center;
+}
+#my_p{
+  font-size: 150%;
+  color: rgb(178, 4, 236);
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+
