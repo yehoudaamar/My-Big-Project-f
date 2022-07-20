@@ -21,7 +21,7 @@ function close_login() {
         Form_Login.style.display = 'none';
 
        
-        window.location = "http://localhost:3121/";
+        window.location = "http://localhost:3221/";
         
 
 
@@ -30,22 +30,20 @@ function close_login() {
 }
 close_login();
 
-function Data_Login() {
 
-    Form_login_data.addEventListener('submit', (e) => {
+
+    Form_login_data.addEventListener('submit', async(e) => {
         e.preventDefault();
         const data = {}
         const Data_login = new FormData(Form_login_data);
 
         for (const [key, value] of Data_login.entries()) {
             data[key] = value;
-            const DatJSON = JSON.stringify(data);
             console.log(data);
 
         }
 
-
-          fetch('http://localhost:3121/login', {
+  await   fetch('http://localhost:3221/login', {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {
@@ -59,5 +57,5 @@ function Data_Login() {
 
     }
     );
-}
-Data_Login();
+
+

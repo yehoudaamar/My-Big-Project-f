@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "email": "1@1",
+    "name": "alia",
+    "password": "$2b$10$8C23Yy9so5Cv3AAuTzUUNOpOrUL1CtwEf58.LDO7efl1ROFuFzSAi"
+  },
+  {
+    "email": "2@2",
+    "name": "aba",
+    "password": "$2b$10$GL6dXGYNeSTDHVUPGy61g.Q5dmykl1InuKsNuOLE8HjOMzTL0cBuu"
+  }
+]

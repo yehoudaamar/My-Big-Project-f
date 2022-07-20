@@ -6,6 +6,16 @@ header{
   /* text-align: center; */
 
 }
+#my_name{
+  text-align: center;
+  font-size: 30px;
+  color: rgb(10, 9, 9);
+  font-family: "Times New Roman", Times, serif;
+  justify-content: center;
+margin-top: 2%;
+margin-left: 2%;
+
+}
 .btn{
   background-color: #c4bfbf;
   margin:4px;

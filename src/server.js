@@ -26,7 +26,7 @@ app.use('/', HomeRouter);
 
 
 
-app.listen(3121, () => {
-    console.log('server is running on port 3121');
+app.listen(3221, () => {
+    console.log('server is running on port 3221');
 }
 );

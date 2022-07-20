@@ -35,7 +35,7 @@ const check_user = function(data){
 function close_singin() {
     x_singin.addEventListener('click', function () {
         Form_Singin.style.display = 'none';
-        window.location = "http://localhost:3121/";
+        window.location = "http://localhost:3221/";
 
     }
     );
@@ -49,7 +49,8 @@ close_singin();
 Form_singin_data.addEventListener('submit', (e) => {
     e.preventDefault();
     const Data_singin = new FormData(Form_singin_data);
-    const data = {}
+    
+    const data =  {}
 
     for (const [key, value] of Data_singin.entries()) {
 
@@ -74,7 +75,7 @@ Form_singin_data.addEventListener('submit', (e) => {
 
 
 
-        fetch('http://localhost:3121/singin', {
+        fetch('http://localhost:3221/singin', {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {

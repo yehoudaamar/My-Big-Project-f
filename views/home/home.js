@@ -1,17 +1,30 @@
-
-// const Btn_Login = document.querySelector('.nav_btn_login');
+const Btn_Login = document.querySelector('.nav_btn_login');
 // const Form_Login = document.querySelector('.conteiner_form_Login');
 // const Form_login_data = document.querySelector('.form_login');
 // const Body_home = document.querySelector('.body_home');
 // const x_login = document.getElementById("x");
 // const Sub_login = document.querySelector('.btn_login');
 // // singin
-// const Btn_Singin = document.querySelector('.nav_btn_singin');
+const Btn_Singin = document.querySelector('.nav_btn_singin');
 // const Form_Singin = document.querySelector('.conteiner_form_Singin');
 // const Form_singin_data = document.querySelector('.form_singin');
 // const x_singin = document.getElementById("xs");
+const my_name = document.querySelector('#my_name');
 
 
+
+
+
+const cookies = document.cookie;
+
+ const my_name_cookie = cookies.slice(0, cookies.indexOf('='));
+
+if (cookies.length > 0 === true) {
+    Btn_Singin.style.display = 'none';
+    Btn_Login.style.display = 'none';
+    my_name.innerHTML = my_name_cookie + "  " + "שלום " + "<a href='/logout' method='post' >Logout</a>";
+
+}
 
 // function Data_Login() {
    
