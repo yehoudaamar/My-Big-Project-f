@@ -4,6 +4,8 @@ const ApiUser = require('../api/User.api');
 const path = require('path');
 const viewsPath = path.join(__dirname + '/../views');
 router.use("/", express.static(viewsPath + "/singin"));
+const Controller = require('../controllers/REQ.controller');
+
 
 
 router.get("/", (req, res) => {
@@ -15,15 +17,24 @@ router.get("/", (req, res) => {
 
 router.post("/", async (req, res) => {
     const data = req.body;
-    const pass = data.password
+    const pass = data.password;
+    const email = data.email;
+    const name = data.name;
 
-    // console.log(password)
+
+    const stringify = JSON.stringify(data);
+console.log(`data: ${stringify}`);
+console.log(`res: ${name}`);
+   
 
     const pswHash = await ApiUser.hashpsw(pass);
     data.password = pswHash
 
-    ApiUser.AddaUser(data);
+    // ApiUser.AddaUser(data);
     res.end();
+
+
+    Controller.post(name , email ,pass);
 })
 
 
